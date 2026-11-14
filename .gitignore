@@ -1,0 +1,8 @@
+# Raw downloads stay out of git (GitHub rejects files over 100 MB)
+/data/
+*.fits
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.streamlit/secrets.toml
