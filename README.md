@@ -37,11 +37,6 @@ streamlit run app.py
 Then open `http://localhost:8501`. The **Bundled example** data source works without any network
 access; the **Live NASA/IPAC archive** source needs to reach `irsa.ipac.caltech.edu`.
 
-On a remote machine (for example a university cluster), forward the port to your own computer:
-
-```bash
-ssh -L 8501:<node>:8501 <user>@<login-host>
-```
 
 ### Command line
 
@@ -122,9 +117,20 @@ Raw downloads go to `data/`, which is not committed.
   through IRSA's Simple Image Access and cutout services. SPHEREx is a NASA mission managed by JPL;
   IRSA is operated by Caltech/IPAC.
 - **Libraries:** Astropy, Astroquery, Reproject, NumPy, pandas, Pillow, Requests, Streamlit.
-- **AI assistance:** the code and documentation in this repository were written with the help of an AI
-  coding assistant (Claude Code by Anthropic) during the hackathon, and reviewed and run by the author.
-- **Barnard's Star proper motion** used for the validation: −0.80″/yr in right ascension and
+- ### AI Tools Disclosure
+
+ALKA Chronos was developed with assistance from Claude Code (Anthropic) and ChatGPT (OpenAI).
+
+**Claude Code** assisted with Python implementation, the SPHEREx image-processing workflow, debugging, and technical documentation.
+
+**ChatGPT** assisted with project planning, technical explanations, Streamlit prototype development, debugging, and Git/GitHub troubleshooting.
+
+The author is responsible for the project's scientific interpretation, verification of results, and final submission.
+
+The repository includes both a SPHEREx image-comparison workflow and a separate demonstration using simulated FITS observations. Simulated data are identified as such and must not be represented as real SPHEREx observations.
+
+Any AI-generated visual assets included in the final submission will be identified and labeled in accordance with the competition requirements.-
+ **Barnard's Star proper motion** used for the validation: −0.80″/yr in right ascension and
   +10.36″/yr in declination (Gaia DR3 values, rounded).
 
 All work in this repository was created during the NASA Space Apps Challenge 2026 (November 14-15).
