@@ -1,4 +1,8 @@
-numpy
-matplotlib
-astropy
-streamlit
+numpy>=1.24
+pandas>=2.0
+astropy>=6.0
+astroquery>=0.4.10
+reproject>=0.13
+requests>=2.28
+pillow>=10.1
+streamlit>=1.37
